@@ -236,6 +236,7 @@ public class FibonacciHeap {
         } else if (this.isEmpty()) {
             setMin(heap2.findMin());
             setLast(heap2.getLast());
+            setSize(heap2.size());
             return;
         }
         insertAfter(getLast(), heap2.getLast().getNext());
